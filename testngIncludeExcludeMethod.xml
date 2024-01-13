@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNg_Include_ExcludeMethods.Class1_HowRunParticularMethod_Include_Exclude">
+      <methods>
+		  <include name="testCase1"></include>    <!-- Only show TC1 & TC4-->
+		  <include name="testCase4"></include>
+	  </methods>
+      </class>
+      
+      <class name="testNg_Include_ExcludeMethods.Class2_HowRunParticularMethod_Include_Exclude"> 
+	<methods>
+		<exclude name="testCase5"></exclude>		
+		<exclude name="testCase6"></exclude>  <!-- ignore TC-->
+	</methods>	  
+	  </class>
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

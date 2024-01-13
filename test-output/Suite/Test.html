@@ -1,0 +1,303 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/1</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 06 14:14:36 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (163 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNgStudy.LisetnerClass2_TC2.h()'><b>h</b><br>Test class: testNgStudy.LisetnerClass2_TC2<br/>
+<a href="#Output-510147134" onClick='toggleBox("Output-510147134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510147134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510147134">
+Test Case h execution start<br/>
+Test Case h is fail Please check again<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at testNgStudy.LisetnerClass2_TC2.h(LisetnerClass2_TC2.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510147134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510147134'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testNgStudy.LisetnerClass2_TC2.h(LisetnerClass2_TC2.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testNgStudy.LisetnerClass2_TC2@f5958c9</td></tr>
+<tr>
+<td title='testNgStudy.ListenerClass1_TC1.b()'><b>b</b><br>Test class: testNgStudy.ListenerClass1_TC1<br/>
+<a href="#Output-154319946" onClick='toggleBox("Output-154319946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-154319946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-154319946">
+Test Case b execution start<br/>
+Test Case b is fail Please check again<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at testNgStudy.ListenerClass1_TC1.b(ListenerClass1_TC1.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace154319946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace154319946'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testNgStudy.ListenerClass1_TC1.b(ListenerClass1_TC1.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testNgStudy.ListenerClass1_TC1@139982de</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNgStudy.ListenerClass1_TC1.a()'><b>a</b><br>Test class: testNgStudy.ListenerClass1_TC1<br/>
+<a href="#Output-702061917" onClick='toggleBox("Output-702061917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702061917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702061917">
+Test Case a execution start<br/>
+Hi a is running<br/>
+Test Case a completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNgStudy.ListenerClass1_TC1@139982de</td></tr>
+<tr>
+<td title='testNgStudy.LisetnerClass2_TC2.i()'><b>i</b><br>Test class: testNgStudy.LisetnerClass2_TC2<br/>
+<a href="#Output-245765246" onClick='toggleBox("Output-245765246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-245765246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-245765246">
+Test Case i execution start<br/>
+Hi i is running <br/>
+Test Case i completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNgStudy.LisetnerClass2_TC2@f5958c9</td></tr>
+<tr>
+<td title='testNgStudy.LisetnerClass2_TC2.f()'><b>f</b><br>Test class: testNgStudy.LisetnerClass2_TC2<br/>
+<a href="#Output-285133380" onClick='toggleBox("Output-285133380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-285133380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-285133380">
+Test Case f execution start<br/>
+Hi f is running<br/>
+Test Case f completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNgStudy.LisetnerClass2_TC2@f5958c9</td></tr>
+<tr>
+<td title='testNgStudy.LisetnerClass2_TC2.g()'><b>g</b><br>Test class: testNgStudy.LisetnerClass2_TC2<br/>
+<a href="#Output-1068586139" onClick='toggleBox("Output-1068586139", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1068586139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1068586139">
+Test Case g execution start<br/>
+Hi g is running <br/>
+Test Case g completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNgStudy.LisetnerClass2_TC2@f5958c9</td></tr>
+<tr>
+<td title='testNgStudy.ListenerClass1_TC1.d()'><b>d</b><br>Test class: testNgStudy.ListenerClass1_TC1<br/>
+<a href="#Output-802243390" onClick='toggleBox("Output-802243390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-802243390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-802243390">
+Test Case d execution start<br/>
+Hi d is running <br/>
+Test Case d completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNgStudy.ListenerClass1_TC1@139982de</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNgStudy.ListenerClass1_TC1.c()'><b>c</b><br>Test class: testNgStudy.ListenerClass1_TC1<br/>
+<a href="#Output-50699452" onClick='toggleBox("Output-50699452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50699452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50699452">
+Test Case c is skipped please check dependent method<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Method testNgStudy.ListenerClass1_TC1.c() on instance testNgStudy.ListenerClass1_TC1@139982de depends on not successfully finished methods 
+[testNgStudy.ListenerClass1_TC1.b() on instance testNgStudy.ListenerClass1_TC1@139982de]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50699452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace50699452'><pre>java.lang.Throwable: Method testNgStudy.ListenerClass1_TC1.c() on instance testNgStudy.ListenerClass1_TC1@139982de depends on not successfully finished methods 
+[testNgStudy.ListenerClass1_TC1.b() on instance testNgStudy.ListenerClass1_TC1@139982de]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testNgStudy.ListenerClass1_TC1@139982de</td></tr>
+</table><p>
+</body>
+</html>

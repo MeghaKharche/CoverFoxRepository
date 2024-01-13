@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  
+	<parameter name="firstName" value="Vishal"/>
+	<parameter name="lastName" value="Narkhede"/>
+	<parameter name="mobNumber" value="9676564356"/>
+		
+    <classes>
+      <class name="testNg_DataProviderCrossBrowserTesting.FB_AccountFormUseXmlUse"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
